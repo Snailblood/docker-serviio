@@ -12,7 +12,7 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y apt-utils curl wget tar bzip2 build-essential checkinstall git libjack-jackd2-dev libvpx4 \
         libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libsdl1.2-dev libtheora-dev librtmp1 openssl \
         libva-dev libvdpau-dev libvorbis-dev libx11-dev libxfixes-dev texi2html zlib1g-dev rtmpdump libfdk-aac-dev \
-        libssl1.1 libssl-dev libxvidcore-dev libxvidcore4 libass-dev dcraw gnupg librtmp-dev libfdk-aac1 libvpx-dev install openjdk-8-jdk && \
+        libssl1.1 libssl-dev libxvidcore-dev libxvidcore4 libass-dev dcraw gnupg librtmp-dev libfdk-aac1 libvpx-dev openjdk-8-jdk && \
 	mkdir -p /usr/share/man/man1 && \
 	mkdir -p ~/src
 
