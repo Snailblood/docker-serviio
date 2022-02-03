@@ -9,12 +9,12 @@ MAINTAINER snailblood <zsolt.tolnay@gmail.com>
 # Test
 # Install Dependencies
 RUN apt update && apt-get upgrade -y && \
-    sudo apt install net-tools software-properties-common openjdk-8-jre default-jre ffmpeg dcraw wget && \
-    cd /opt
-    wget http://download.serviio.org/releases/serviio-2.1-linux.tar.gz
-    tar zxvf serviio-2.1-linux.tar.gz
-    ln -s serviio-2.1 serviio
-    chown -R root:root /opt
+    apt install net-tools software-properties-common openjdk-8-jre default-jre ffmpeg dcraw wget && \
+    cd /opt && \
+    wget http://download.serviio.org/releases/serviio-2.1-linux.tar.gz && \
+    tar zxvf serviio-2.1-linux.tar.gz && \
+    ln -s serviio-2.1 serviio && \
+    chown -R root:root /opt && \ 
     rm serviio-2.1-linux.tar.gz
     
 VOLUME ["/opt/serviio/library", "/opt/serviio/plugins", "/opt/serviio/log", "/media"]
