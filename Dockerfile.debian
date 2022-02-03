@@ -60,7 +60,7 @@ RUN cd ~/src && git clone git://git.videolan.org/x264 && \
 #    checkinstall --pkgname=libvpx --pkgversion="1.6.1" --backup=no --deldoc=yes --fstrans=no --default && \
 #	rm -rf ~/src/libvpx
 
-ARG SERVIIO_VERSION=1.9
+ARG SERVIIO_VERSION=2.1
 ARG FFMPEG_VERSION=3.4.1
 
 # Build ffmpeg
