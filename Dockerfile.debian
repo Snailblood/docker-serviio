@@ -6,7 +6,7 @@
 
 FROM ubuntu:20.04
 MAINTAINER snailblood <zsolt.tolnay@gmail.com>
-
+# Test
 # Install Dependencies
 RUN apt update && apt-get upgrade -y && \
     sudo apt install net-tools software-properties-common openjdk-8-jre default-jre ffmpeg dcraw wget && \
